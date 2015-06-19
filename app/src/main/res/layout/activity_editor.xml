@@ -1,0 +1,215 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditorActivity"
+    >
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/primary"
+        android:gravity="center"
+        >
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/close_button"
+            android:id="@+id/button"
+            android:textColor="#fff"
+            android:onClick="closeButton"
+            android:background="@color/primary_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_button"
+            android:id="@+id/button2"
+            android:textColor="#fff"
+            android:onClick="sendButton"
+            android:background="@color/primary_dark"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saveButton"
+            android:id="@+id/button3"
+            android:textColor="#fff"
+            android:onClick="saveButton"
+            android:background="@color/primary_dark"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+<nu.tillbudsrapport.tillbud.VerticalScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/scrollView"
+
+    android:layout_above="@id/footer">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etPlace"
+
+        android:singleLine="true" android:imeOptions="actionNext"
+        android:layout_below="@+id/tvPlace"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="@string/hintplace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plats"
+        android:id="@+id/tvPlace"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repoter"
+        android:id="@+id/tvRepoter"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/etReporter"
+        android:singleLine="true" android:imeOptions="actionNext"
+        android:layout_below="@+id/tvRepoter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/etPlace"
+        android:layout_alignEnd="@+id/etPlace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        android:id="@+id/tvDescription"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/etReporter"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/etDescription"
+            android:layout_below="@+id/tvDescription"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/etReporter"
+
+            android:layout_alignEnd="@+id/etReporter"
+            android:inputType="textMultiLine|textAutoCorrect|textCapSentences"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/why"
+            android:id="@+id/tvWhy"
+
+            android:layout_below="@+id/etDescription"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/etWhy"
+            android:scrollbars="vertical"
+            android:gravity="top|left"
+            android:layout_below="@+id/tvWhy"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:imeOptions="actionNext"
+            android:inputType="textMultiLine|textAutoCorrect|textCapSentences"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/date"
+            android:id="@+id/tvDatetext"
+            android:onClick="setDate"
+            android:layout_below="@+id/etPlace"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="31 December 2015"
+            android:onClick="setDate"
+            android:id="@+id/tvDate"
+            android:layout_below="@+id/tvDatetext"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:id="@+id/tvTimetext"
+            android:onClick="setTime"
+            android:layout_above="@+id/tvTime"
+            android:layout_alignLeft="@+id/tvTime"
+            android:layout_alignStart="@+id/tvTime" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="00:00"
+            android:onClick="setTime"
+            android:id="@+id/tvTime"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_alignTop="@+id/tvDate"
+            android:layout_alignRight="@+id/etReporter"
+            android:layout_alignEnd="@+id/etReporter" />
+
+    </RelativeLayout>
+    </nu.tillbudsrapport.tillbud.VerticalScrollView>
+
+
+</RelativeLayout>
+

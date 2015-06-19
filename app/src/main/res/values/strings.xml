@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Tillbud</string>
+    <string name="create_sample_data">Create sample data</string>
+    <string name="delete_all_notes">Delete all notes</string>
+    <string name="are_you_sure">Are you sure?</string>
+    <string name="all_deleted">All notes deleted</string>
+    <string name="title_activity_editor">EditorActivity</string>
+
+
+    <string name="new_note_title">Ny tillbudsrapport</string>
+    <string name="action_delete">Delete</string>
+    <string name="note_deleted">Rapport borttagen</string>
+    <string name="note_updated">Rapport uppdaterad</string>
+    <string name="close_button">Stäng</string>
+    <string name="send_button">Skicka</string>
+    <string name="plats">Plats:</string>
+    <string name="repoter">Rapportör:</string>
+    <string name="description">Beskrivning av händelsen:</string>
+    <string name="why">Varför inträffade händelsen/uppstod situationen?</string>
+    <string name="date">Datum:</string>
+    <string name="time">Tid:</string>
+    <string name="edit_tillbud">Ändra tillbudsrapport</string>
+
+    <string name="tillbudsrapport">Tillbudsrapport</string>
+
+    <string name="part1"><![CDATA[<body lang=SV style=\'tab-interval:65.2pt\'><div class=WordSection1><h1>Tillbudsrapport</h1><h2><br>Plats:</h2><p class=MsoNormal>]]></string>
+    <string name="part2"><![CDATA[</p><h2>Rapportör:</h2><p class=MsoNormal>]]></string>
+    <string name="part3"><![CDATA[</p><h2>Tid och datum:</h2><p class=MsoNormal>]]></string>
+    <string name="part4"><![CDATA[</p><h2>Beskrivning av händelsen:</h2><p class=MsoNormal>]]></string>
+    <string name="part5"><![CDATA[</p><h2>Varför inträffade händelsen/uppstod situationen?</h2><p class=MsoNormal>]]></string>
+    <string name="part6"><![CDATA[</p><br><br><br><br><p class=MsoNormal align=center style=\'text-align:center\'>Detta mail går <span class=GramE>ej</span> att svara på, du hänvisas till den <span class=SpellE>emailen</span>som står i mailet.</p>]]></string>
+    <string name="hintplace">Skriv in var det hände</string>
+    <string name="contentdescrapport">Rapport</string>
+    <string name="saveButton">Spara</string>
+    <string name="closewithoutsave">Stänga utan att spara?</string>
+    <string name="angemottagare">Ange mottagare:</string>
+    <string name="arbetsgivare">Arbetsgivarens e-mail</string>
+    <string name="avsandare">Ange avsändare:</string>
+    <string name="frivilligt">(frivilligt)</string>
+    <string name="deleteall">Rensa alla rapporter</string>
+
+
+</resources>
