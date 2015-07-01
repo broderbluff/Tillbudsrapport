@@ -28,14 +28,14 @@
     <string name="part3"><![CDATA[</p><h2>Tid och datum:</h2><p class=MsoNormal>]]></string>
     <string name="part4"><![CDATA[</p><h2>Beskrivning av händelsen:</h2><p class=MsoNormal>]]></string>
     <string name="part5"><![CDATA[</p><h2>Varför inträffade händelsen/uppstod situationen?</h2><p class=MsoNormal>]]></string>
-    <string name="part6"><![CDATA[</p><br><br><br><br><p class=MsoNormal align=center style=\'text-align:center\'>Detta mail går <span class=GramE>ej</span> att svara på, du hänvisas till den <span class=SpellE>emailen</span>som står i mailet.</p>]]></string>
+    <string name="part6"><![CDATA[</p><br><br><br><br><p class=MsoNormal align=center style=\'text-align:center\'>Detta mail går <span class=GramE>ej</span> att svara på, du hänvisas till den <span class=SpellE>emailen</span> som eventuellt står med i mailet.</p>]]></string>
     <string name="hintplace">Skriv in var det hände</string>
     <string name="contentdescrapport">Rapport</string>
     <string name="saveButton">Spara</string>
     <string name="closewithoutsave">Stänga utan att spara?</string>
     <string name="angemottagare">Ange mottagare:</string>
     <string name="arbetsgivare">Arbetsgivarens e-mail</string>
-    <string name="avsandare">Ange avsändare:</string>
+    <string name="avsandare">Ange avsändare e-mail:</string>
     <string name="frivilligt">(frivilligt)</string>
     <string name="deleteall">Rensa alla rapporter</string>
 

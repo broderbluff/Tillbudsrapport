@@ -297,7 +297,6 @@ public class EditorActivity extends AppCompatActivity {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater=EditorActivity.this.getLayoutInflater();
-        //this is what I did to added the layout to the alert dialog
         @SuppressLint("InflateParams") View layout=inflater.inflate(R.layout.dialog,null);
 
         builder.setView(layout);
@@ -429,7 +428,7 @@ public class EditorActivity extends AppCompatActivity {
 
 
             dialog.dismiss();
-
+            finishEditing();
 
         }
 
@@ -438,8 +437,7 @@ public class EditorActivity extends AppCompatActivity {
 
 
     public void onActivityResult(int reqCode, int resultCode, Intent data) {
-//what should i have to write to fetch email address of selected contact
-// I wrote like below but i could not get result
+
 
         if (resultCode == Activity.RESULT_OK) {
             try{
